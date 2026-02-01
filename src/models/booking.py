@@ -1,5 +1,5 @@
 class Booking:
-    def __init__(self, booking_id, user_id, car_id, start_date, end_date, status, total_price):
+    def __init__(self, booking_id, user_id, car_id, start_date, end_date, status, total_price, return_date=None, extra_charge=0):
         self.booking_id = booking_id
         self.user_id = user_id
         self.car_id = car_id
@@ -7,3 +7,5 @@ class Booking:
         self.end_date = end_date
         self.status = status
         self.total_price = total_price
+        self.return_date = return_date
+        self.extra_charge = extra_charge

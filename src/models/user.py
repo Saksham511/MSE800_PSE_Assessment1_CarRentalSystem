@@ -7,7 +7,7 @@ class User:
         self.contact = contact
         self.role = role
 
-
+#----------created two inheritance of User-------------
 class Customer(User):
     def __init__(self, user_id, name, username, email, contact):
         super().__init__(user_id, name, username, email, contact, "customer")
